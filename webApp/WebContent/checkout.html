@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+ <div id="checkoutContainer">
+ <div class= "checkout-header">
+  <h1 align = "center">
+      Checkout
+    </h1>
+ </div>
+   
+    <div class="container checkoutPanel">
+      <div class="card card-body">
+        <table id="orderDisplay" class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+        </table>
+        <hr>
+        <div class="card-group">
+          <div id="customerInfo" class="card transactionInfo">
+            <span class="boldText">
+              Customer Details
+              <button id="editActBtn" class="actionBtn" onclick="customerLogin.viewEditAccount()">Edit Account</button>
+            </span>
+            <table id="customerDetails">
+              <tr id="customerNameDisplay"></tr>
+              <tr id="customerAddressDisplay"></tr>
+              <tr id="customerCreditCardDisplay"></tr>
+            </table>
+          </div>
+          <div id="transactionDisplay" class="card transactionInfo">
+            <table id="transactionTotals" class="table">
+              <tr id="subtotal"></tr>
+              <tr id="orderType"></tr>
+              <tr id="tax"></tr>
+              <tr id="total"></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="btnContainer">
+    <input type="submit" value = "Edit Order" id= "submit" class = "btn float-right actionBtn" onclick = "order.editOrder">
+    <input type="submit" value = "Place Order" id= "submit" class = "btn float-right actionBtn" onclick = "order.placeOrder">
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="menuContainer" class = "menucontainer">
+<div class="menu-header">
+<h1 align="center">Menu</h1>
+</div>
+    <div id="menubox">
+      <div id="menuPanel" class="container-fluid">
+      
+        <div id="item1" class="card">
+          <img src="images/pizza.jpg" alt="Pizza" style="width: 300px; height: 300px;" class="images">
+          <button onclick="order.removeItem(menu.menuItems[0])" class="itemQuantityBtn">-</button>
+          <p id="pizzaAmount" class="amount"></p>
+          <button onclick="order.addItem(menu.menuItems[0])" class="itemQuantityBtn">+</button>
+          <p id="pizza" class="item"></p>
+        </div>
+
+        <div id="item2" class="card">
+          <img src="images/pie.jpg" alt="Pie" style="width: 300px; height: 300px;" class="images">
+          <button onclick="order.removeItem(menu.menuItems[2])" class="itemQuantityBtn">-</button>
+          <p id="hotDogAmount" class="amount"></p>
+          <button onclick="order.addItem(menu.menuItems[2])" class="itemQuantityBtn">+</button>
+          <p id="hotDog" class="item"></p>
+        </div>
+
+        <div id="item3" class="card">
+          <img src="images/soup.jpg" alt="Tomato Soup" style="width: 300px; height: 300px;" class="images">
+          <button onclick="order.removeItem(menu.menuItems[3])" class="itemQuantityBtn">-</button>
+          <p id="soupAmount" class="amount"></p>
+          <button onclick="order.addItem(menu.menuItems[3])" class="itemQuantityBtn">+</button>
+          <p id="soup" class="item"></p>
+        </div>
+
+        <div id="bottomDiv" class="container">
+         <!--  <select id="select" class="menuOrderDetails" onchange="order.selectOrderType()">
+            <option value="delivery">Delivery</option>
+            <option value="pickup">Pickup</option>
+          </select> -->
+          <div id="menuSpacer" class="menuOrderDetails"></div>
+          <!--spacer-->
+          <p id="orderTotal" class="menuOrderDetails"></p>
+          <div id="checkoutbutton" class="menuOrderDetails">
+           <input type = "button" value = "Checkout" class = "btn float-right checkout_btn" onclick =  "document.location.href ='checkout.html'" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

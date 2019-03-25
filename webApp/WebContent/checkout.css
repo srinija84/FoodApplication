@@ -1,0 +1,84 @@
+
+html,body{
+background: url('images/background.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+
+#btnContainer {
+	width: 400px;
+	margin: 0 auto;
+	margin-bottom: 20px
+}
+
+#editActBtn {
+	height: 20px;
+	width: 60px;
+	font-size: 14px;
+}
+
+#orderDisplay th {
+	font-size: 140%;
+	padding: 8px;
+	text-align: left;
+}
+
+#orderDisplay td {
+	fontsize: 120px;
+	padding: 8px;
+	text-align: left;
+}
+
+.checkoutPanel {
+	margin: 0 auto;
+	margin-bottom: 5%;
+	display: block;
+	color: black;
+	padding: 5px;
+}
+
+#transactionTotals {
+  text-align: right;
+}
+
+#transactionDisplay {
+  width: 30%;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+#customerInfo {
+  width: 70%;
+}
+
+#customerInfo td {
+  padding: 8px;
+}
+
+.transactionInfo {
+  padding: 1%;
+}
+
+.actionBtn {
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 150px;
+  background: #FFC312;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.actionBtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
